@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="resources/favicon.png">
 </head>
 
 
@@ -28,7 +29,8 @@
                     <li><a href="whydonateblood.html">WHY DONATE BLOOD</a></li>
                     <li><a href="canyoudonate.html">CAN YOU DONATE</a></li>
                     <li><a href="friend.html">REFER A FRIEND</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li></b></strong>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="emergency.html">It's an emergency!</a></li></b></strong>
                 </ul>
                 
             </div>
@@ -44,19 +46,22 @@
             
         </div>
         <div class="login">
+
+        <form  action="login.php" method="post">  <!--Home page login form start here===============================================================================-->
             <span class="logindonor">DONOR </span><span class="logindonor2">LOGIN</span>
         </div>
         <div class="inputBox">
-            <input type="text" required="required">
+            <input type="text" required="required" name="loginusername">
             <span>Username</span>
         </div>
         <div class="inputBox2">
-            <input type="text" required="required">
+            <input type="password" required="required" name="loginpassword">
             <span>Password</span>
         </div>
         <div class="button">
             <button class="button">LOGIN</button>
         </div>
+    </form>  <!--Form ends here ======================================================================================================-->
         
         </div>
     </section>
@@ -67,28 +72,28 @@
             <span style="color: black; border-bottom: 4px solid #11ABB0;">Find a donor</span>
         </div>
         <div class="form">
-            <form>
+            <form action="finddonor.php" method="post"> <!--Find donor form==================================================-->
                 <label for="name">NAME</label>
-                <input type="text" id="name" name="NAME" placeholder="YOUR NAME">
+                <input type="text" id="name" name="findname" placeholder="YOUR NAME">
                 <label for="number">NUMBER</label>
-                <input type="tel" id="number" name="NUMBER" placeholder="YOUR NUMBER">
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="EMAIL" placeholder="YOUR EMAIL">
+                <input type="tel" id="number" name="findnumber" placeholder="YOUR NUMBER">
+                <label for="group">BLOOD GROUP</label>
+                <input type="text" id="group" name="findbloodgroup" placeholder="YOUR blood group">
             </form>
         </div>
         <div class="form2">
-            <form>
+            <form action="finddonor.php" method="post"> <!--Find donor 2nd div form=====================================-->
                 <label for="state">STATE</label>
-                <input type="text" id="state" name="STATE" placeholder="YOUR STATE">
+                <input type="text" id="state" name="findstate" placeholder="YOUR STATE">
                 <label for="city">CITY</label>
-                <input type="tel" id="city" name="CITY" placeholder="YOUR CITY">
-                <label for="group">BLOOD GROUP</label>
-                <input type="email" id="group" name="BLOOD GROUP" placeholder="YOUR BLOOD GROUP">
-            </form>
+                <input type="tel" id="city" name="findcity" placeholder="YOUR CITY">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="findemail" placeholder="YOUR EMAIL">
         </div>
         <div class="button2">
             <button class="button">FIND</button>
         </div>
+    </form> <!--Form ends here =========================================================================================-->
     </section>
 
     <section class="process">
@@ -174,7 +179,7 @@
             <div class="col-2">
                 <h3> NEWSLETTER</h3>
                 <form>
-                    <input type="email" placeholder="Your Email Address" required>
+                    <input type="email" name="footeremail" placeholder="Your Email Address" required>
                     <br>
                     <button type="submit">SUBSCRIBE NOW</button>
                 </form>
