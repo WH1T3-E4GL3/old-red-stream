@@ -24,11 +24,11 @@
             <div class="nav-links">
                 <ul>
                     <strong><b><li><a href="index.html">HOME</a></li>
-                    <li><a href="registration.html">REGISTER</a></li>
+                    <li><a href="registration.php">REGISTER</a></li>
                     <li><a href="#findonor">FIND DONOR</a></li>
                     <li><a href="whydonateblood.html">WHY DONATE BLOOD</a></li>
                     <li><a href="canyoudonate.html">CAN YOU DONATE</a></li>
-                    <li><a href="friend.html">REFER A FRIEND</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
                     <li><a href="contact.html">CONTACT US</a></li>
                     <li><a href="emergency.html">It's an emergency!</a></li></b></strong>
                 </ul>
@@ -47,27 +47,27 @@
         </div>
         <div class="login">
 
-        <form  action="login.php" method="post">  <!--Home page login form start here===============================================================================-->
-            <span class="logindonor">DONOR </span><span class="logindonor2">LOGIN</span>
+    <form method="post" action="loginprocess.php"> <!--HOME PAGE LOGIN FORM STARTS HERE===============================================================================-->
+        <span class="logindonor">DONOR </span><span class="logindonor2">LOGIN</span>
         </div>
         <div class="inputBox">
-            <input type="text" required="required" name="loginusername">
+            <input type="text" name="loginusername"placeholder="" required>
             <span>Username</span>
         </div>
         <div class="inputBox2">
-            <input type="password" required="required" name="loginpassword">
+            <input type="password" name="loginpassword"placeholder=""required>
             <span>Password</span>
         </div>
         <div class="button">
-            <button class="button">LOGIN</button>
+            <button class="button" name="submit" value="login">LOGIN</button>
         </div>
-    </form>  <!--Form ends here ======================================================================================================-->
+    </form> <!--LOGIN FORM ENDS HERE ======================================================================================================================================-->
         
         </div>
     </section>
     <hr style="color: #11ABB0;">
     
-    <section style="height: 25cm;" class="findonor" id="findonor">
+    <section style="height: 25cm;" class="findonor" id="findonor"> <!--using this id we can call this particular part of this page-->
         <div class="head">
             <span style="color: black; border-bottom: 4px solid #11ABB0;">Find a donor</span>
         </div>
@@ -91,7 +91,7 @@
                 <input type="email" id="email" name="findemail" placeholder="YOUR EMAIL">
         </div>
         <div class="button2">
-            <button class="button">FIND</button>
+            <button class="button" type="submit">FIND</button>
         </div>
     </form> <!--Form ends here =========================================================================================-->
     </section>
@@ -192,3 +192,4 @@
         </div>
     </section>
 </body>
+</html>
