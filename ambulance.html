@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Red Stream</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="resources/favicon.png">
+    <style>
+ .box {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 0 140px;
+    max-width: 300px;
+    text-align: left;
+    display: inline-block;
+    vertical-align:auto;
+  }
+  
+  .box1{
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+   margin-left: 20.2cm;
+    max-width: 300px;
+    text-align: left;
+    display: inline-block;
+    vertical-align:auto;
+  }
+  .box h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+  .box p {
+    color: antiquewhite;
+    font-size: 18px;
+  }
+
+.button1 {
+  background-color: rgb(54, 46, 46);
+  border-radius: 7px; 
+  color: rgb(255, 255, 255); 
+  border: 2px solid #383838;
+  font-size: 25px;
+}
+
+.button1:hover {
+  background-color: #d14606;
+  color: white;
+}
+
+    </style>
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="resources/logo.png" alt="hi"></a>
+        <div class="nav-links1">
+            <ul>
+                <li><a style="color: #db8e6b" href="index.html">HOME</a></li>
+                <li><a style="color: #db8e6b" href="registration.php">REGISTER</a></li>
+                <li><a style="color: #db8e6b" href="index.html#findonor">FIND DONOR</a></li>
+                <li><a style="color: #db8e6b" href="whydonateblood.html">WHY DONATE BLOOD</a></li>
+                <li><a style="color: #db8e6b" href="canyoudonate.html">CAN YOU DONATE</a></li>
+                <li><a style="color: #db8e6b" href="aboutus.html">ABOUT US</a></li>
+                <li><a style="color: #db8e6b" href="contact.html">CONTACT US</a></li>
+                <li><a style="color: #db8e6b" href="emergency.html">It's an emergency!</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="box1">
+        <h1 style="color:rgb(154, 158, 161);">AMBULANCE SERVICES</h1>
+        <p style="color: antiquewhite;">Here are the contact numbers for our own ambulance services:</p>
+        <ul>
+            <li style="color: antiquewhite;">Ambulance central head - Call <a style="color: #d14606"; href="tel:75589513511">7558951351</a></li><br>
+            <li style="color: antiquewhite;">  Service 1 - Call <a style="color: #d14606"; href="tel:+919633801753">+919633801753</a></li><br>
+            <li style="color: antiquewhite;">  Service 2 - Call <a style="color: #d14606"; href="tel:+917558089724">+917558089724</a></li><br>
+            <li style="color: antiquewhite;">Service 3 - Call <a style="color: #d14606"; href="tel:+917947119770">+917947119770</a></li><br>
+        </ul>
+        <!-- Call Button -->
+        <button class="button button1" onclick="callAmbulance()">Call Ambulance Center</button>
+        <script>
+            function callAmbulance() {
+                window.location.href = "tel:123-456-7890"; // Replace phone number with the number you want to call
+            }
+        </script>
+    </div>
+  
+  <section class="additional-content">
+    <div class="box">
+      <h2>Our Ambulance Services</h2>
+      <p>At Red Stream, we are committed to providing the best ambulance services to our communit as much as we can. Our ambulances are staffed by highly experience and trained drivers and with a trained paramedic.</p>
+    </div>
+  
+    <div class="box">
+      <h2>Emergency Medical Services</h2>
+      <p>In addition to our ambulance services, we also provide emergency medical services. If you or a loved one is experiencing a situation which needs blood contact us, we will deal with it.</p>
+    </div>
+  
+    <div class="box">
+      <h2>Donate Blood, Save Lives</h2>
+      <p>Did you know that in kerala, every 1 month 1.5 lakh of blood donors are needed ? By donating blood, you can help save lives and make a difference in your community. Visit our <a style="color: #d14606"; href="registration.php">registration page</a> to find out how you can donate blood today.</p>
+    </div>
+  </section>
+<br>
+
+<br><br>
+<section class="bottom">
+  <div class="footer">
+      <div class="col-1">
+          <h3>USEFUL LINKS</h3>
+          <a href="index.html">HOME</a>
+          <a href="registration.html">REGISTRATION</a>
+          <a href="whydonateblood.html">WHY DONATE BLOOD</a>
+          <a href="canyoudonate.html">CAN YOU DONATE</a>
+          <a href="contact.html">CONTACT US</a>
+      </div>
+      <div class="col-2">
+          <h3> NEWSLETTER</h3>
+          <form>
+              <input type="email" name="footeremail" placeholder="Your Email Address" required>
+              <br>
+              <button type="submit">SUBSCRIBE NOW</button>
+          </form>
+      </div>
+      <div class="col-3">
+          <h3> CONTACT</h3>
+          <br>
+          <p>231, vaikom Road, Near Thalook hospital<br>Kottayam, Kerala, IN<br>Contact: +91 7558 9513 51</p>
+      </div>
+  </div>
+</section>
+</body>
+</html>
