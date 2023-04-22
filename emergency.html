@@ -8,52 +8,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
         rel="stylesheet">
-        <link rel="shortcut icon" href="resources/favicon.png">
+    <link rel="shortcut icon" href="resources/favicon.png">
 
-
-        <style>
-            #emergency-info {
-                display: none;
-                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                font-size: 20px;
-                font-weight: bold;
-                color: #000000;
-                background-color: #f2f2f2;
-                border: 2px solid #772222;
-                padding: 20px;
-                border-radius: 8px;
-                margin: 20px;
+    <style>
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 90px 170px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 184px;
+            transition-duration: 0.4s;
+            cursor: pointer;
             }
-        </style>
 
-
+        .button3:hover {
+            background-color: rgb(153, 134, 111);
+            color: white;
+            border:4px solid #494244;
+        }
+        .button3 {
+            background-color:#cfcfc0; 
+            color: rgb(153, 134, 111); 
+            border: 2px solid #353434;
+}
+    </style>
 </head>
 
 <body>
-    <section class="header">
+    <section class="header1">
         <nav>
             <a href="index.html"><img src="resources/logo.png" alt="hi"></a>
             <div class="nav-links1">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="registration.html">REGISTER</a></li>
+                    <li><a href="registration.php">REGISTER</a></li>
+                    <li><a href="index.html#findonor">FIND DONOR</a></li>
                     <li><a href="whydonateblood.html">WHY DONATE BLOOD</a></li>
                     <li><a href="canyoudonate.html">CAN YOU DONATE</a></li>
-                    <li><a href="friend.html">REFER A FRIEND</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
                     <li><a href="contact.html">CONTACT US</a></li>
                     <li><a href="emergency.html">It's an emergency!</a></li>
                 </ul>
             </div>
         </nav>
-        
-    
-        <button id="ambulance-button" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 30px; font-weight: bold; color: #ffffff; background-color: #362829; border: 2px solid #772222; padding: 2cm 6px; border-radius: 8px; margin-left: 2cm;">Call an Ambulance</button>
-    
-    
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-
+    </section>
+    <section class="ratio">
+        <div class="dnprocess">
+            <h1>
+                Emergency
+            </h1>
+        </div>
+        <br><br><br>
+        <a href="ambulance.html"><button class="button button3"><h2>Call an Ambulance</h2><br></button></a> <a href="helpdesk.html"><button class="button button3"><h2>Call our emergency<br> help desk</h2></button></a>
+        </div>
+    <br><br><br><br> <br><br><br><br> <br><br><br><br> <br>
     <section class="bottom">
         <div class="footer">
             <div class="col-1">
@@ -79,3 +91,5 @@
             </div>
         </div>
     </section>
+</body>
+</html>
