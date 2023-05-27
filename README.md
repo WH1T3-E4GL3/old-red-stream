@@ -20,3 +20,4 @@ This pack comes under Apache License 2.0
   
   ©Sethu
 
+As this project is made as a part of my college project, this is not perfect, the allignments will be different on your screen. please adjust it as per your  comfort.
