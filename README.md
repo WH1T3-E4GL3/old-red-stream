@@ -21,7 +21,7 @@ If you choose to adapt this template for your own needs, you must share your ada
 Please read the full license text at [http://creativecommons.org/licenses/by-nc/4.0/](http://creativecommons.org/licenses/by-nc/4.0/) for more details.
 
 
-#    WILL UPLOAD THE COMPLEATED CODE BEFORE JUNE 1
+
 # Don't just copy, hit the star also😊
 
 <br><br>
