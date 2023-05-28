@@ -36,7 +36,7 @@ Please read the full license text at [http://creativecommons.org/licenses/by-nc/
 # Blood-Donation-Web-template
 This include front end design and backend code for a blood donation based website
 
-This pack comes under Apache License 2.0  
+This pack comes under Creative Commons Attribution-NonCommercial license (CC BY-NC). 
 
 ~Work by WHITE L'
   
