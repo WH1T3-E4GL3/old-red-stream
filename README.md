@@ -1,6 +1,6 @@
                                                         UNDER WORK🛠
                                                         
-# Web Template
+# Red Stream Web Template
 
 This is a web template that I have created and made available for private use. Please note the licensing terms before using this template.
 
