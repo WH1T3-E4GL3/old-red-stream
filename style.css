@@ -1,0 +1,1007 @@
+/* This stylesheet defines the styles for the header section of the website, including the background color, size, and position. 
+It also defines the styles for the navigation bar, including the font, color, size, and hover effects. The stylesheet also defines the styles for a text box that appears 
+in the header section, including the font size, color, and animation effect. Additionally, the stylesheet defines styles for a login form, including the input fields, 
+placeholders, and colors. 
+The CSS code defines the styles for various elements such as headings, inputs, buttons, containers, and so on. These styles determine the font, color, size, position, 
+and other visual aspects of the elements. The CSS code in your question sets styles for different classes, including .coinfo, .footer, .atprocess, .dnprocess, 
+and .ytvid, among others.*/
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+}
+.header{
+   min-height: 100vh;
+   width: 100%;
+  /* background-color: #1A1A1D;*/
+   background-image: url("header-background.png");
+   background-image: radial-gradient(rgba(238, 235, 235, 0), rgb(48, 42, 42)), url(header-background.png); 
+   background-size: cover;
+   background-position: center;
+}
+
+nav{
+   display: flex;
+   padding: 2% 3%;
+   justify-content: space-between;
+   align-items: center;
+}
+nav img{
+   width: 180px;
+
+}
+.nav-links{
+   flex: 1;
+   text-align: right;
+   
+}
+.nav-links ul li{
+   list-style: none;
+   display: inline-block;
+   padding: 8px 12px;
+   position: relative;
+}
+.nav-links ul li a{
+   color: #ffffff;
+   text-decoration: none;
+   font-size: 13px;
+   font-family:opensans-bold , sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   transition: color .2s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: rgb(255, 123, 0);
+}
+
+.nav-links ul li::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background: #4E4E50;
+   display: block;
+   margin: auto;
+   transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+   width: 80%;
+}
+.text-box{
+   width: max-content;
+   color: white;
+   position: absolute;
+   top: 45%;
+   left: 65%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.text-box h1{
+   font-size: 110px;
+}
+.text-box h1 span{
+  color: #ff004c;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate
+{
+  0%,100%
+  {
+     clip-path: polygon(0% 45%, 15% 44%, 32% 50%,
+           54% 60%, 70% 61%, 84% 59%, 100% 52%,
+           100% 100%, 0% 100%);
+  }
+  50%
+  {
+     clip-path: polygon(0 60%, 16% 65%, 34% 66%,
+           51% 62%, 67% 50%, 84% 45%, 100% 46%, 100%
+         100%, 0% 100%)
+  }
+}
+.blood{
+  width: max-content;
+  color: transparent;
+  position: absolute;
+  top: 45%;
+  left: 65%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.blood h1{
+  font-size: 110px;
+}
+.blood h1 span{
+  -webkit-text-stroke: 2px #ff004c;
+}
+.blood p{
+  
+  font-size: 28px;
+  color: transparent;
+}
+.text-box p{
+   
+   font-size: 28px;
+   color: white;
+}
+.nav2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   flex-direction: column;
+   gap : 30px;
+}
+.inputBox{
+   display: flex;
+   place-items: center;
+   width: max-content;
+   color: white;
+   position: absolute;
+   top: 42%;
+   left: 17%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.inputBox input{
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ff004c;
+   background: #1A1A1D;
+   border-radius: 5px;
+   outline: none;
+   color: #fff;
+   font-size: 1em;
+}
+.inputBox span{
+   position: absolute;
+   left: 0;
+   padding: 10px;
+   pointer-events: none;
+   font-size: 1em;
+   color: rgba(255,255,255,0.25);
+   text-transform: uppercase;
+   transition: 0.5s;
+}
+.inputBox2{
+   display: flex;
+   place-items: center;
+   width: max-content;
+   color: white;
+   position: absolute;
+   top: 52%;
+   left: 17%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.inputBox2 input{
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ff004c;
+   background: #1A1A1D;
+   border-radius: 5px;
+   outline: none;
+   color: #fff;
+   font-size: 1em;
+}
+.inputBox2 span{
+   position: absolute;
+   left: 0;
+   padding: 10px;
+   pointer-events: none;
+   font-size: 1em;
+   color: rgba(255,255,255,0.25);
+   text-transform: uppercase;
+   transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+   color: #ff004c;
+   transform: translateX(10px) translateY(-23px);
+   font-size: 0.65em;
+   padding: 0 10px;
+   background: #1A1A1D;
+   border-left: 1px solid #ff004c;
+   border-right: 1px solid #ff004c;
+   letter-spacing: 0.2em;
+}
+.inputBox2 input:valid ~ span,
+.inputBox2 input:focus ~ span
+{
+   color: #ff004c;
+   transform: translateX(10px) translateY(-23px);
+   font-size: 0.65em;
+   padding: 0 10px;
+   background: #1A1A1D;
+   border-left: 1px solid #ff004c;
+   border-right: 1px solid #ff004c;
+   letter-spacing: 0.2em;
+}
+.login{
+   width: max-content;
+   color: #ff004c;
+   position: absolute;
+   top: 34%;
+   left: 17%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   font-size: 30px;
+}
+.logindonor{
+  font-weight: bold;
+  color:#fff;
+  font-size: 30px;
+}
+.logindonor2{
+  font-weight: bold;
+  color: #ff0062;
+  font-size: 30px;
+}
+.button button{
+   background-color: #ff004c;
+   border: none;
+   color: white;
+   padding: 10px 60px;
+   border-radius: 20px;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   position: absolute;
+   top: 62%;
+   left: 17%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.button button:active{
+  background-color: rgb(255, 255, 255);
+  color: #1A1A1D;
+}
+/*-----process-----*/
+
+.donateabout{
+  font-weight: bold;
+  color:#fff;
+  font-size: 50px;
+  text-decoration:underline;
+}
+.donateabout1{
+  font-weight: bold;
+  color:#ce0000;
+  font-size: 50px;
+  text-decoration:underline;
+}
+.process{
+  min-height: 2100px;
+  width: 100%;
+  color: #ffffff;
+  background-color: #2B2B2B;
+  margin: auto;
+  position: relative;
+}
+.donprocess{
+  text-align: center;
+  padding-top: 30px;
+}
+.donprocess h1{
+  font-size: 70px;
+  font-weight: 600;
+  color: #ff004c;
+}
+.donprocess p{
+  font-size: 25px;
+  font-weight: 200;
+}
+.actprocess{
+  padding-left: 55px;
+  padding-right: 500px;
+  padding-top: 50px;
+  color: #7A7A7A;
+}
+.actprocess h2{
+  font-size: 40px;
+  line-height: 70px;
+  font-weight: 600;
+}
+.actprocess ul{
+  padding-left: 60px;
+  font-size: 17px;
+  line-height: 35px;
+  font-weight: 400;
+}
+.actprocess p{
+  padding-left: 20px;
+  line-height: 35px;
+  font-weight: 400;
+}
+.actprocess h3{
+  line-height: 70px;
+}
+.donprocess h4{
+  font-size: 43px;
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #ff004c;
+}
+.donprocess h4 span{
+  -webkit-text-stroke: 2px #ff004c;
+  color: transparent;
+}
+.findonor{
+  min-height: 800px;
+  width: 100%;
+  background-color: #ffffff;
+  margin: auto;
+}
+.head{
+  text-align: center;
+  color: #1f1e1e;
+  padding-top: 20px;
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.form form label{
+  flex-direction: column;
+  font-family: opensans-bold, sans-serif;
+  letter-spacing: 0.2em;
+  display: flex;
+  color: #000000;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 600;
+}
+.form form input{
+  width: 350px;
+  padding: 10px;
+  border: 1px solid #00eeff;
+  background: #ffffff;
+  border-radius: 5px;
+  outline: none;
+  color: #000000;
+  font-size: 1em;
+  margin: 5px 0px 50px 0px;
+}
+.form form{
+  position: absolute;
+  left: 10%;
+  top: 15px;
+}
+.form form input::placeholder{
+  color: #4E4E50;
+}
+.form2 form label{
+  flex-direction: column;
+  font-family: opensans-bold, sans-serif;
+  letter-spacing: 0.2em;
+  display: flex;
+  color: #000000;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 600;
+}
+.form2 form input{
+  width: 350px;
+  padding: 10px;
+  border: 1px solid #00eeff;
+  background: #ffffff;
+  border-radius: 5px;
+  outline: none;
+  color: #000000;
+  font-size: 1em;
+  margin: 5px 0px 50px 0px;
+}
+.form2 form{
+  float: right;
+  position: relative;
+  top: 15px;
+  right: 10%;
+}
+.form2 form input::placeholder{
+  color: #4E4E50;
+}
+.form{
+  position: relative;
+}
+.form2{
+  position: relative;
+}
+.button2 button{
+  background-color: #11ABB0;
+  border: none;
+  color: white;
+  padding: 10px 60px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  top: 550px;
+  left: 890px;
+}
+.button2{
+  position: relative;
+  align-items: center;
+}
+.button2 button:active{
+  background-color: white;
+  color: #1A1A1D;
+}
+
+/*---Registration---*/
+.header1{
+  min-height: 150px;
+  width: 100%;
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+}
+.nav-links1{
+  flex: 1;
+  text-align: right;
+
+}
+.nav-links1 ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links1 ul li a{
+  color: #3a3636;
+  text-decoration:none;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+
+}
+
+.nav-links1 a:hover {
+  color: rgb(23, 157, 161);
+}
+.nav-links1 ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #4E4E50;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links1 ul li:hover::after{
+  width: 80%;
+}
+.loinfo{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background-color: #ffffff;
+}
+.loinfo form1 label{
+  letter-spacing: 0.2em;
+  flex-direction: column;
+  display: flex;
+  color: #3a3636;
+  text-align: left;
+  font-size: 25px;
+  font-weight:bolder;
+}
+.loinfo form1 input{
+  width: 350px;
+  padding: 10px;
+  border: 1px solid  #11ABB0;
+  background: #e5e5eb;
+  border-radius: 5px;
+  outline: none;
+  color: #000000;
+  font-size: 1em;
+  margin: 5px 0px 50px 0px;
+}
+.loinfo form1{
+  position: absolute;
+  left: 10%;
+  top: 135px;
+}
+.loinfo form1 input::placeholder{
+  color: #4E4E50;
+}
+.loinfo form2 label{
+  flex-direction: column;
+  display: flex;
+  color: #3a3636;
+  text-align: left;
+  letter-spacing: 0.2em;
+  font-size: 25px;
+  font-weight:bolder;
+}
+.loinfo form2 input{
+  width: 350px;
+  padding: 10px;
+  border: 1px solid  #11ABB0;
+  background: #e5e5eb;
+  border-radius: 5px;
+  outline: none;
+  color: #050505;
+  font-size: 1em;
+  margin: 5px 0px 50px 0px;
+}
+.loinfo form2{
+  position: absolute;
+  right: 30%;
+  top: 135px;
+}
+.loinfo form2 input::placeholder{
+  color: #4E4E50;
+}
+.loinfo h3{
+  color: #3a3636;
+  font-size: 60px;
+  position: absolute;
+  left: 10%;
+}
+.doninfo{
+  width: 100%;
+  height: 500px;
+  background-color: #e5e5eb;
+  position: relative;
+}
+.doninfo form1 label{
+  flex-direction: column;
+  display: flex;
+  color: #3a3636;
+  text-align: left;
+  letter-spacing: 0.2em;
+  font-size: 25px;
+  font-weight:bolder;
+}
+.doninfo form1 select{
+  width: 350px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid  #11ABB0;
+  background: #ffffff;
+  border-radius: 5px;
+  outline: none;
+  color: #3a3636;
+  font-size: 1em;
+  margin: 5px 0px 50px 0px;
+}
+.doninfo form1 input{
+  width: 340px;
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid  #11ABB0;
+  background: #ffffff;
+  border-radius: 5px;
+  outline: none;
+  color: #3a3636;
+  font-size: 1em;
+  margin: 5px 0px 50px 0px;
+}
+.doninfo form1{
+  position: absolute;
+  left: 10%;
+  top: 135px;
+}
+.doninfo form1 input::placeholder{
+  color: #4E4E50;
+}
+.doninfo form2 label{
+  flex-direction: column;
+  display: flex;
+  color: #3a3636;
+  text-align: left;
+  letter-spacing: 0.2em;
+  font-size: 25px;
+  font-weight:bolder;
+}
+.doninfo form2 select{
+  width: 350px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid  #11ABB0;
+  background: #ffffff;
+  border-radius: 5px;
+  outline: none;
+  color: #3a3636;
+  font-size: 1em;
+  margin: 5px 0px 50px 0px;
+}
+.doninfo form2{
+  position: absolute;
+  right: 30%;
+  top: 135px;
+}
+.doninfo form2 input::placeholder{
+  color: #4E4E50;
+}
+.doninfo h3{
+  color: #3a3636;
+  font-size: 60px;
+  position: absolute;
+  left: 10%;
+}
+.coinfo{
+  width: 100%;
+  height: 700px;
+  background-color: #ffffff;
+  position: relative;
+}
+.coinfo form1 label{
+  flex-direction: column;
+  display: flex;
+  color: #3a3636;
+  text-align: left;
+  letter-spacing: 0.2em;
+  font-size: 25px;
+  font-weight:bolder;
+}
+.coinfo form1 select{
+  width: 230px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid  #11ABB0;
+  background: #e5e5eb;
+  border-radius: 5px;
+  outline: none;
+  color: #3a3636;
+  font-size: 1em;
+  margin: 5px 0px 50px 0px;
+}
+.coinfo form1{
+  position: absolute;
+  left: 10%;
+  top: 135px;
+}
+.coinfo form1 input::placeholder{
+  color: #4E4E50;
+}
+.coinfo form2 label{
+  flex-direction: column;
+  display: flex;
+  color: #3a3636;
+  text-align: left;
+  letter-spacing: 0.2em;
+  font-size: 25px;
+  font-weight:bolder;
+}
+.coinfo form2 select{
+  width: 230px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #11ABB0;
+  background: #e5e5eb;
+  border-radius: 5px;
+  outline: none;
+  color: #3a3636;
+  font-size: 1em;
+  margin: 5px 0px 50px 0px;
+}
+.coinfo form2{
+  position: absolute;
+  right: 52%;
+  top: 135px;
+}
+.coinfo form2 input::placeholder{
+  color: #4E4E50;
+}
+.coinfo form3 label{
+  flex-direction: column;
+  display: flex;
+  color: #3a3636;
+  text-align: left;
+  letter-spacing: 0.2em;
+  font-size: 25px;
+  font-weight:bolder;
+}
+.coinfo form3 input{
+  width: 230px;
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid  #11ABB0;
+  background: #e5e5eb;
+  border-radius: 5px;
+  outline: none;
+  color: #3a3636;
+  font-size: 1em;
+  margin: 5px 0px 50px 0px;
+}
+.coinfo form3{
+  position: absolute;
+  right: 30%;
+  top: 131px;
+}
+.coinfo form3 input::placeholder{
+  color: #4E4E50;
+}
+.coinfo h3{
+  color: #3a3636;
+  font-size: 60px;
+  position: absolute;
+  left: 10%;
+}
+.coinfo form4 label{
+  flex-direction: column;
+  display: flex;
+  color: #3a3636;
+  text-align: left;
+  letter-spacing: 0.2em;
+  font-size: 25px;
+  font-weight:bolder;
+}
+.coinfo form4 input{
+  width: 833px;
+  padding: 10px;
+  border: 1px solid  #11ABB0;
+  background: #e5e5eb;
+  border-radius: 5px;
+  outline: none;
+  color: #000000;
+  font-size: 1em;
+  margin: 5px 0px 50px 0px;
+}
+.coinfo form4{
+  position: absolute;
+  left: 10%;
+  top: 435px;
+}
+.coinfo form4 input::placeholder{
+  color: #4E4E50;
+}
+.coinfo button{
+  background-color:  #11ABB0;
+  border: none;
+  color: white;
+  padding: 11px 50px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  top: 570px;
+  left: 34.5%;
+}
+.coinfo button:active{
+  background-color: white;
+  color: #1A1A1D;
+}
+.footer{
+  width: auto;
+  padding:75px 15% 60px;
+  background: #0F0F0F;
+  color: #525252;
+  display: flex;
+}
+.footer div{
+  text-align: left;
+  font-weight: bolder;
+}
+.col-2{
+  flex-grow:2;
+  padding-left: 8cm;
+}
+.footer div h3{
+  font-weight: bolder;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.col-1 a{
+  display:block;
+  text-decoration: none;
+  color: #525252;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+.col-2 form input {
+  width: 400px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: 3px solid #525252;
+  background-color: #373233;
+  color: white;
+  font-weight: bolder;
+}
+.col-2 form button{
+  background: transparent;
+  border: 2px solid #525252;
+  color: #525252;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.atprocess{
+  padding-left: 55px;
+  padding-right: 500px;
+  padding-top: 50px;
+  color: #182628;
+  padding-bottom: 50px;
+  background-color: #E3E2DF;
+  position: relative;
+}
+.atprocess h2{
+  font-size: 40px;
+  line-height: 70px;
+  font-weight: 600;
+}
+.atprocess ul{
+  padding-left: 60px;
+  font-size: 17px;
+  line-height: 35px;
+  font-weight: bolder;
+}
+.atprocess p{
+  padding-left: 20px;
+  line-height: 35px;
+  font-weight: 400;
+}
+.atprocess h3{
+  line-height: 70px;
+}
+.dnprocess{
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 20px;
+  color: #494244;
+  background-color: #cfcfc0;
+}
+.dnprocess h1{
+  font-size: 70px;
+  font-weight: bolder;
+}
+.dnprocess p{
+  font-size: 25px;
+  font-weight: 200;
+  padding-bottom: 50px;
+}
+.atprocess iframe{
+  position: absolute;
+  top: 15%;
+  left: 64.25%;
+}
+.ratio{
+  width: 100%;
+  height: 600px;
+  background-color: #E3E2DF;
+  position: relative;
+}
+
+.ratio1{
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+.ratio1 h1{
+  font-size: 40px;
+}
+.ratio1 form label{
+  flex-direction: column;
+  display: flex;
+  color: #182628;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 600;
+}
+.ratio1 form input{
+  width: 270px;
+  padding: 10px;
+  border: 1px solid #182628;
+  background: transparent;
+  border-radius: 5px;
+  outline: none;
+  color: #182628;
+  font-size: 1em;
+  margin: 5px 0px 10px 0px;
+}
+.ratio1 form{
+  position: absolute;
+  padding: 30px 13%;
+}
+.ratio1 form input::placeholder{
+  color: #4E4E50;
+}
+.ratio1 button{
+  background-color: #182628;
+  border: none;
+  color: white;
+  padding: 11px 50px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.ratinfo{
+  position: absolute;
+  color: #182628;
+  padding-left: 55%;
+  top: 180px;
+  z-index: 1;
+}
+.ratinfo h1{
+  font-size: 50px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+.ratinfo p{
+  font-size: 30px;
+  margin-bottom: 40px;
+  line-height: 40px;
+}
+.ratinfo button:active{
+  background-color: white;
+  color: #1A1A1D;
+}
+.friend{
+  position: relative;
+}
+.friend h1{
+  font-size: 70px;
+  color: #ff004c;
+  text-align: center;
+  position: relative;
+  top: 5%;
+  margin-top: 25px;
+}
+.finfo{
+  position: absolute;
+  top: 36%;
+  left: 12%;
+}
+.finfo h1{
+  color: #ff004c;
+  font-size: 40px;
+}
+.finfo p{
+  color: #fff;
+  margin-right: 990px;
+  font-size: 22px;
+}
+.fform form input {
+  width: 500px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  border: 3px solid #950740;
+  background-color: #fff;
+  color: #182628;
+}
+.fform form button{
+  background: transparent;
+  border: 2px solid #950740;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+  position: absolute;
+  left: 30%;
+}
+.fform{
+  position: absolute;
+  left: 52%;
+  top: 67%;
+}
+.anime{
+  position: absolute;
+  left: 55%;
+  top: 22%;
+}
+.dnprocess iframe{
+  position: absolute;
+  top: 60%;
+  z-index: 2;
+  left: 67%;
+}

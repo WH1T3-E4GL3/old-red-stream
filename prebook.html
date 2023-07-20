@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Red Stream</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="resources/logo.png">
+    <style>
+.box {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 5em;
+  margin: 0 10cm;
+  width: 1000px;
+  text-align: left;
+  display: inline-block;
+  vertical-align: auto;
+}
+  .box h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+  .box p {
+    color: antiquewhite;
+    font-size: 18px;
+  }
+
+.button1 {
+  background-color: rgb(54, 46, 46);
+  border-radius: 7px; 
+  color: rgb(255, 255, 255); 
+  border: 2px solid #383838;
+  font-size: 25px;
+}
+.button1:hover {
+  background-color: #d14606;
+  color: white;
+}
+
+.registration-form {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.336);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-box {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 11px;
+    background: rgba(255, 255, 255, 0.534);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+  }
+
+  .form-box h2 {
+    margin-top: 0;
+  }
+
+  .form-box label,
+  .form-box input,
+  .form-box select,
+  .form-box textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+
+  .form-box input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+  }
+
+  .form-group button[type="submit"] {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .form-group button[type="submit"] {
+    width: 100%;
+    background-color: #ec9c3f;
+  }
+  .form-group button[type="submit"]:hover {
+    width: 95%;
+    background-color: #ca2626;
+  }
+    </style>
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="resources/logo.png" alt="hi"></a>
+        <div class="nav-links1">
+            <ul>
+                <li><a style="color: #db8e6b" href="index.html">HOME</a></li>
+                <li><a style="color: #db8e6b" href="registration.php">REGISTER</a></li>
+                <li><a style="color: #db8e6b" href="index.html#findonor">FIND DONOR</a></li>
+                <li><a style="color: #db8e6b" href="whydonateblood.html">WHY DONATE BLOOD</a></li>
+                <li><a style="color: #db8e6b" href="canyoudonate.html">CAN YOU DONATE</a></li>
+                <li><a style="color: #db8e6b" href="aboutus.html">REFER A FRIEND</a></li>
+                <li><a style="color: #db8e6b" href="contact.html">CONTACT US</a></li>
+                <li><a style="color: #db8e6b" href="emergency.html">It's an emergency!</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="box">
+      <h2>Pre-book blood</h2>
+      <p>This is a section that you can book blood for an upcoming day. And in that case we will directly avail blood for you and the blood will be reached to you in your preffered location.
+        Our agent will call you for confirmations and in this particcular case of a pre-book you need to pay a little amount so that we can help you in the entire process.
+      </p>
+    </div>
+<br><br>
+<div class="registration-form">
+    <form action="prebook.php" method="post">
+      <div class="form-group">
+        <div class="form-box">
+          <h2>Login Information</h2>
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required>
+          <label for="mobile">Mobile Number</label>
+          <input type="tel" id="mobile" name="mobile" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-box">
+          <h2>Recipient Information</h2>
+          <label for="bloodgroup">Blood Group</label>
+          <input type="text" id="bloodgroup" name="bloodgroup" required>
+          <label for="birthdate">Birth Date</label>
+          <input type="date" id="birthdate" name="birthdate" required>
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <label for="weight">Weight</label>
+          <input type="number" id="weight" name="weight" required>
+          <label for="date">Day you want blood</label>
+          <input type="date" id="booddate" name="booddate" required>
+        </div>
+        <div class="form-box">
+          <h2>Contact Information</h2>
+          <label for="showmobile">Show Mobile</label>
+          <input type="checkbox" id="showmobile" name="showmobile">
+          <label for="state">State</label>
+          <input type="text" id="state" name="state" required>
+          <label for="smsalert">SMS Alert</label>
+          <input type="checkbox" id="smsalert" name="smsalert">
+          <label for="district">District</label>
+          <input type="text" id="district" name="district" required>
+          <label for="zipcode">ZIP Code</label>
+          <input type="text" id="zipcode" name="zipcode" required>
+          <label for="area">Area</label>
+          <input type="text" id="area" name="area" required>
+          <label for="landmarks">Nearby Landmarks</label>
+          <textarea id="landmarks" name="landmarks" rows="3" required></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+      <button type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+<br><br> </section>
+<section class="bottom">
+  <div class="footer">
+      <div class="col-1">
+          <h3>USEFUL LINKS</h3>
+          <a href="index.html">HOME</a>
+          <a href="registration.html">REGISTRATION</a>
+          <a href="whydonateblood.html">WHY DONATE BLOOD</a>
+          <a href="canyoudonate.html">CAN YOU DONATE</a>
+          <a href="contact.html">CONTACT US</a>
+      </div>
+      <div class="col-2">
+          <h3> NEWSLETTER</h3>
+          <form>
+              <input type="email" name="footeremail" placeholder="Your Email Address" required>
+              <br>
+              <button type="submit">SUBSCRIBE NOW</button>
+          </form>
+      </div>
+      <div class="col-3">
+          <h3> CONTACT</h3>
+          <br>
+          <p>231, vaikom Road, Near Thalook hospital<br>Kottayam, Kerala, IN<br>Contact: +91 7558 9513 51</p>
+      </div>
+  </div>
+</section>
+</body>
+</html>

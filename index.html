@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Red stream</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="resources/logo.png">
+    <style>
+.donor-form {
+  width: 50%;
+  margin-left: 12cm;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #ffffffb0;
+  padding: 20px;
+  height: 840px;
+
+  position: absolute;
+  top: 140%;
+  left: 22%;
+  transform: translate(-40%, -40%);
+}
+
+.donor-form label{
+letter-spacing: 0.2em;
+flex-direction:row;
+display: flex;
+color: #3a3636;
+text-align: right;
+font-size: 25px;
+font-weight: bolder;
+}
+.donor-form select {
+    width: 500px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #11ABB0;
+  background: #e5e5eb;
+  border-radius: 5px;
+  outline: none;
+  color: #000000;
+  font-size: 1em;
+  margin: 5px 0px 50px 0px;
+  cursor: pointer;
+}
+
+.donor-form input {
+width: 22cm;
+height: 0px;
+padding: 10px;
+border: 1px solid #11ABB0;
+background: #e5e5eb;
+border-radius: 5px;
+outline: none;
+color: #000000;
+font-size: 1em;
+margin: 5px 0px 50px 0px;
+}
+.donor-form button{
+    background-color: #11ABB0;
+  border: none;
+  color: white;
+  padding: 11px 50px;
+  border-radius: 5px;
+  text-decoration:none;
+  font-size: 16px;
+
+}
+.donor-form label {
+  text-align: right;
+}
+
+.donor-form select {
+  width: 89%;
+}
+
+h2{
+    color: #3a3636;
+font-size: 60px;
+position: center;
+}
+    </style>
+</head>
+<body>
+    <section class="header">         
+        <nav>          
+            <a href="index.html"><img src="resources/logo.png" alt="hi"></a>            
+            <div class="nav-links">
+                <ul>
+                    <strong><b><li><a href="index.html">HOME</a></li>
+                    <li><a href="registration.php">REGISTER</a></li>
+                    <li><a href="#findonor">FIND DONOR</a></li>
+                    <li><a href="whydonateblood.html">WHY DONATE BLOOD</a></li>
+                    <li><a href="canyoudonate.html">CAN YOU DONATE</a></li>
+                    <li><a href="aboutus.html">REFER A FRIEND</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="emergency.html">It's an emergency!</a></li></b></strong>
+                </ul>                
+            </div>            
+        </nav>       
+        <div class="text-box">
+            <h1>RED <span>STREAM</span></h1>            
+        </div>
+        <div class="blood">
+            <h1>RED <span>STREAM</span></h1>           
+        </div>
+        <div class="login">
+    <form method="post" action="loginprocess.php"> <!--HOME PAGE LOGIN FORM STARTS HERE===============================================================================-->
+        <span class="logindonor">DONOR </span><span class="logindonor2">LOGIN</span>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="loginusername"placeholder="" required>
+            <span>Username</span>
+        </div>
+        <div class="inputBox2">
+            <input type="password" name="loginpassword"placeholder=""required>
+            <span>Password</span>
+        </div>
+        <div class="button">
+            <button class="button" name="submit" value="login">LOGIN</button>
+        </div>
+    </form> <!--LOGIN FORM ENDS HERE ======================================================================================================================================-->
+        
+        </div>
+    </section>
+    <hr style="color: #11ABB0;">
+</section>
+<hr style="color: #11ABB0;"><section style="height: 24cm; background-color: #e6e4d0;" class="findonor" id="findonor">
+<!--============================================================================================-->
+<div class="donor-form">
+    <form action="finddonor.php" method="post">
+        <center><h2>Find Donor</h2></center>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="blood-type">Blood Type:</label>
+      <select id="blood-type" name="bloodtype">
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+      </select> 
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city">
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state">
+      <br>
+      <button type="submit" name="submit">Find Donor</button>
+    </form>
+  </div>
+</section> <!--============================================================================================-->
+    <section class="process">
+        <div class="donprocess">
+            <span class="donateabout">DONATION </span><span class="donateabout1"> PROCESS</span>
+            <h4>REGISTER TO BE A <span>BLOOD DONOR</span><br>TODAY!</h4>
+            <p>Giving blood is simple and it saves lives. When you give blood, it is collected so</br>
+                it can be used to treat someone else.</p>
+        </div>
+        </br>
+        <div class="actprocess">
+            <h2>Before you give blood</h2>
+            <ul>
+                <li>Check you are able to give blood.</li>
+                <li>Register your interest in being a donor, or call 0300 123 23 23.</li>
+                <li>Log in to your online account and find an appointment - a number of appointments can be booked in
+                    advance.
+                    If you are unable to book now, then please try for a later date. A limited number of walk-in slots
+                    are available.</li>
+                <li>Follow the preparing to give blood recommendations.</li>
+            </ul>
+            </br>
+            <h2>When you give blood</h2>
+            <ul>
+                <li>
+                    <h3>Welcome and preparation</h3>
+                </li>
+                <p>Remember to bring your completed donation safety check form with you, if you received one from us in
+                    the post.
+                    We will ask you to read our donor consent booklet which explains the importance of blood
+                    safety.
+                    It's important to read this whenever you attend because advice does change.
+                    We will give you 500ml of fluid just before you give blood. Drinking this over about 5 minutes will
+                    help with your
+                    well-being during and after donation.</p>
+                <li>
+                    <h3>Health screening</h3>
+                </li>
+                <p>We make sure it is safe for you to donate, and that your blood donation is safe for a patient to
+                    receive.</p>
+                <ul>
+                    <li>We confirm your identity and ask you about the information on your donor health check form;
+                        a registered nurse may follow up if necessary.</li>
+                    <li>We test a drop of blood from your finger to check the iron levels (haemoglobin) in your blood.
+                        If you are not able to donate we will explain why, and may ask you to make another appointment.
+                    </li>
+                </ul>
+                <p>If you are able to donate you will be asked to sit in a waiting area until you are called to a
+                    donation chair.</p>
+                <li>
+                    <h3>Your blood donation</h3>
+                </li>
+                <p>When you are comfortable on the chair we will ask you to confirm your name, address and date of
+                    birth.
+                    We examine your arm and place a cuff on your arm to maintain a small amount of pressure during
+                    donation.
+                    We then examine your arm to find a suitable vein and clean it with an antiseptic sponge.</p>
+                <ul>
+                    <li>We will insert a needle in your arm which will collect your blood into a blood bag with your
+                        unique donor number.</li>
+                    <li>You should not feel any discomfort or pain. If you do, tell a member of staff.</li>
+                    <li>A scale weighs the blood and stops when you have donated 470ml (or just under a pint). This
+                        usually takes between 5-10 minutes.</li>
+                    <li>The needle will be removed and a sterile dressing applied to your arm.</li>
+                </ul>
+                <p>More about what happens after you give blood</p>
+            </ul>
+        </div>
+    </section>
+    <section class="bottom">
+        <div class="footer">
+            <div class="col-1">
+                <h3>USEFUL LINKS</h3>
+                <a href="index.html">HOME</a>
+                <a href="registration.html">REGISTRATION</a>
+                <a href="whydonateblood.html">WHY DONATE BLOOD</a>
+                <a href="canyoudonate.html">CAN YOU DONATE</a>
+                <a href="contact.html">CONTACT US</a>
+            </div>
+            <div class="col-2">
+                <h3> NEWSLETTER</h3>
+                <form>
+                    <input type="email" name="footeremail" placeholder="Your Email Address" required>
+                    <br>
+                    <button type="submit">SUBSCRIBE NOW</button>
+                </form>
+            </div>
+            <div class="col-3">
+                <h3> CONTACT</h3>
+                <br>
+                <p>231, vaikom Road, Near Thalook hospital<br>Kottayam, Kerala, IN<br>Contact: +91 7558 9513 51</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

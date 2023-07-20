@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Red Stream</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="resources/logo.png">
+    <style>
+body {
+  background-image: url("resources/background.jpg");
+  background-size:100%;
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    text-align: left;
+    vertical-align: auto;
+}
+
+.box h2 {
+    color: #044136;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.box p {
+    color: rgb(6, 75, 66);
+    font-size: 18px;
+}
+
+button.button1 {
+    background-color: rgb(5, 48, 35);
+    border-radius: 7px; 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #383838;
+    font-size: 25px;
+    width: 100%;
+}
+
+button.button1:hover {
+    background-color: #d14606;
+    color: white;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    background-color: #f8f8f8;
+    border: 1px solid #034429;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    outline: none;
+    border: 1px solid #01e7f7;
+}
+
+.box ::placeholder {
+    color: #777;
+}
+
+.sparkles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 9999;
+            width: 10px;
+            height: 10px;
+            background: radial-gradient(rgba(255, 215, 0, 0.8), transparent);
+            border-radius: 50%;
+            opacity: 0;
+            transform-origin: center;
+            animation: sparkles 0.5s ease-out;
+        }
+
+        @keyframes sparkles {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener("mousemove", function(event) {
+            var sparkles = document.createElement("div");
+            sparkles.className = "sparkles";
+            sparkles.style.top = (event.pageY - 5) + "px";
+            sparkles.style.left = (event.pageX - 5) + "px";
+            document.body.appendChild(sparkles);
+            setTimeout(function() {
+                sparkles.remove();
+            }, 500);
+        });
+    </script>
+    <section class="login">
+        <div class="box">
+            <h2>Admin Login</h2>
+            <form action="adminlogin.php" method="post">
+                <p>Username</p>
+                <input type="text" name="username" placeholder="Enter Username" required>
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Enter Password" required>
+                <br><br>
+                <button class="button1" type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
