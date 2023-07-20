@@ -1,6 +1,7 @@
-                                                     UNDER WORK🛠
-                                                        
-# Red Stream Web Template
+# old-red-stream
+The old version of project redstream website with basic functions implemented. Not responsive and less database functions with no security. You can find the new updated version (responsive, more features and new look) of this project at https://github.com/WH1T3-E4GL3/Project-Red-Stream
+
+
 
 This is a web template that I have created and made available for private use. Please note the licensing terms before using this template.
 
@@ -26,7 +27,7 @@ Please read the full license text at [http://creativecommons.org/licenses/by-nc/
 
 <br><br>
 
-                                                     SCREENSHORT OF THE HOME PAGE 
+    SCREENSHORT OF THE HOME PAGE 
 
 ![Screenshot (6)](https://user-images.githubusercontent.com/118425907/221409916-a24bff30-05b3-499e-bf75-4a0fa2d010c8.png)
 
@@ -38,8 +39,7 @@ This include front end design and backend code for a blood donation based websit
 
 This pack comes under Creative Commons Attribution-NonCommercial license (CC BY-NC). 
 
-~Work by WHITE L'
-  
-  ©Sethu
+~Work by Sethu Satheesh
 
-As this project is made as a part of my college project, this is not perfect, the allignments will be different on your screen. please adjust it as per your  comfort.
+As this project is made as a part of my college project, this is not perfect, the allignments will be different on your screen, because it is not responsive. please adjust it as per your  comfort.
+New version of this project:  https://github.com/WH1T3-E4GL3/Project-Red-Stream
